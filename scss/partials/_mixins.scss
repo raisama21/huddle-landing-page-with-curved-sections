@@ -1,0 +1,7 @@
+$small-bp: 480px;
+
+@mixin small-breakpoints {
+  @media all and (min-width: #{$small-bp}) {
+    @content;
+  }
+}

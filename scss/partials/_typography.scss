@@ -1,0 +1,18 @@
+h1 {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-bold);
+  font-size: 28px;
+  color: var(--very-dark-cyan);
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-bold);
+  color: var(--very-dark-cyan);
+}
+
+p {
+  font-family: var(--font-body);
+  font-weight: var(--fw-regular);
+  color: var(--very-dark-cyan);
+}
