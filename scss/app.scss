@@ -69,10 +69,16 @@ figure {
     color: var(--light-pink);
     border: 3px solid var(--light-pink);
     border-radius: 20px;
+    font-family: var(--font-heading);
 
     @include u.small-breakpoints {
       padding: 8px 22px;
       border-radius: 24px;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.6;
+      }
     }
   }
 }
@@ -105,6 +111,11 @@ figure {
       border-radius: 36px;
       font-family: var(--font-body);
       font-weight: var(--fw-semibold);
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.6;
+      }
     }
   }
 }
@@ -392,6 +403,13 @@ footer::before {
     font-family: var(--font-body);
     font-weight: var(--fw-regular);
     color: hsl(0, 0%, 100%);
+
+    @include u.small-breakpoints {
+      &:hover {
+        cursor: pointer;
+        opacity: 0.6;
+      }
+    }
   }
 }
 
@@ -412,6 +430,9 @@ footer {
 }
 
 .secondsection {
+  svg {
+    fill: hsl(0, 0%, 100%);
+  }
   @include u.small-breakpoints {
     max-width: 41ch;
   }

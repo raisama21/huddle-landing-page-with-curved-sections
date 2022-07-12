@@ -168,11 +168,16 @@ figure {
   color: var(--light-pink);
   border: 3px solid var(--light-pink);
   border-radius: 20px;
+  font-family: var(--font-heading);
 }
 @media all and (min-width: 480px) {
   .header__button {
     padding: 8px 22px;
     border-radius: 24px;
+  }
+  .header__button:hover {
+    cursor: pointer;
+    opacity: 0.6;
   }
 }
 
@@ -202,6 +207,10 @@ figure {
     border-radius: 36px;
     font-family: var(--font-body);
     font-weight: var(--fw-semibold);
+  }
+  .button__cta:hover {
+    cursor: pointer;
+    opacity: 0.6;
   }
 }
 
@@ -477,6 +486,12 @@ footer::before {
   font-weight: var(--fw-regular);
   color: hsl(0deg, 0%, 100%);
 }
+@media all and (min-width: 480px) {
+  .sub__button:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}
 
 footer {
   margin-top: 250px;
@@ -494,6 +509,9 @@ footer {
   }
 }
 
+.secondsection svg {
+  fill: hsl(0deg, 0%, 100%);
+}
 @media all and (min-width: 480px) {
   .secondsection {
     max-width: 41ch;
